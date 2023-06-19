@@ -16,6 +16,14 @@ if ( ! defined( 'WPINC' ) ) {
 // Carrega o autoload do Composer.
 require __DIR__ . '/vendor/autoload.php';
 
+function define_constants()
+{
+    // Define globals constants of plugin
+    define( 'SEND_POST_SOCIAL_NETWORK_PATH', plugin_dir_path( __FILE__ ) );
+    define( 'SEND_POST_SOCIAL_NETWORK_URL', plugin_dir_url( __FILE__ ) );
+    define( 'SEND_POST_SOCIAL_NETWORK_VERSION', '1.0.0' );
+}
+
 // Inicia o plugin.
 function runSendPostSocialNetwork() {
     register_activation_hook( __FILE__, array( 'SendPostSocialNetwork\SendPostInit', 'activate' ) );
@@ -25,4 +33,6 @@ function runSendPostSocialNetwork() {
     $plugin = SendPostSocialNetwork\SendPostInit::getInstance();
     $plugin->initPlugin();
 }
+
+define_constants();
 runSendPostSocialNetwork();
