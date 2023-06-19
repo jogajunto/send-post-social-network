@@ -1,0 +1,18 @@
+{
+    "name": "local/send-post-social-network",
+    "description": "Plugin for send posts to socials network with zapier",
+    "version": "1.0.0",
+    "type": "wordpress-plugin",
+    "autoload": {
+        "psr-4": {
+            "SendPostSocialNetwork\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "rafaell1995",
+            "email": "rafaeldearaujop95@gmail.com"
+        }
+    ],
+    "require": {}
+}
