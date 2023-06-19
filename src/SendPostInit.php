@@ -32,7 +32,8 @@ class SendPostInit {
 
     public static function activate() {
         // Activate plugin
-        error_log( print_r( 'Activate plugin', true ) );
+        // Rewrite permalinks of Wordpress
+        update_option( 'rewrite_rules', '' );
     }
 
     public static function deactivate() {
