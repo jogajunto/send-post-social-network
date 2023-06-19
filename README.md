@@ -13,14 +13,14 @@ This WordPress plugin allows you to send your WordPress posts to a specified Zap
 
 1. Download the plugin files.
 2. Upload the plugin files to the `/wp-content/plugins/` directory, or install the plugin through the WordPress plugins screen directly.
-3. Activate the plugin through the 'Plugins' screen in WordPress.
+3. Execute in bash `composer dump-autoload` for generate autoload classes.
+4. Activate the plugin through the 'Plugins' screen in WordPress.
 
 ## Configuration
 
 1. Navigate to the plugin settings page (the location of this page will depend on how the plugin is set up, typically it is located in the WordPress admin sidebar).
-2. Execute in bash `composer dump-autoload` for generate autoload classes.
-3. Enter your Zapier endpoint URL into the 'Zapier Endpoint URL' field.
-4. Save your changes.
+2. Enter your Zapier endpoint URL into the 'Zapier Endpoint URL' field.
+3. Save your changes.
 
 ## Usage
 
