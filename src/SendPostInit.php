@@ -2,6 +2,9 @@
 
 namespace SendPostSocialNetwork;
 
+use SendPostSocialNetwork\SendPostSettings;
+use SendPostSocialNetwork\SendPostHooks;
+
 class SendPostInit {
     /**
      * Versão do Plugin.
@@ -9,12 +12,12 @@ class SendPostInit {
     const VERSION = '1.0.0';
 
     /**
-     * Instância única deste plugin.
+     * Instância única desta classe.
      */
     protected static $instance = null;
 
     /**
-     * Retorna uma instância única deste plugin.
+     * Retorna uma instância única desta classe.
      */
     public static function getInstance() {
         if ( null == self::$instance ) {
@@ -28,6 +31,20 @@ class SendPostInit {
      */
     private function __construct() {
         // Código de inicialização do plugin aqui...
+    }
+
+    /**
+     * Inicializa as hooks do plugin.
+     */
+    public function initPlugin() {
+        // Adicione as ações e filtros do WordPress aqui...
+        // Init Settings
+        $options = SendPostSettings::getInstance();
+        $options->initSettings();
+
+        // Init Hooks plugin
+        $hooks = SendPostHooks::getInstance();
+        $hooks->initHooks();
     }
 
     public static function activate() {
@@ -46,10 +63,4 @@ class SendPostInit {
         // Uninstall plugin
     }
 
-    /**
-     * Inicializa as hooks do plugin.
-     */
-    public function initPlugin() {
-        // Adicione as ações e filtros do WordPress aqui...
-    }
 }
