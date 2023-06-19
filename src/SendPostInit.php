@@ -38,7 +38,8 @@ class SendPostInit {
 
     public static function deactivate() {
         // Deactivate plugin
-        error_log( print_r( 'Deactivate plugin', true ) );
+        // Rewrite permalinks of Wordpress
+        flush_rewrite_rules();
     }
 
     public static function uninstall() {
