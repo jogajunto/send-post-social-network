@@ -12,8 +12,7 @@ This WordPress plugin allows you to send your WordPress posts to a specified Zap
 ## Installation
 
 1. Download the plugin files.
-2. Upload the plugin files to the `/wp-content/plugins/` directory, or install the plugin through the WordPress plugins screen directly.
-3. Execute in bash `composer dump-autoload` for generate autoload classes.
+2. Upload the plugin files to the `/wp-content/plugins/` directory, execute in bash `composer install` for generate autoload classes.
 4. Activate the plugin through the 'Plugins' screen in WordPress.
 
 ## Configuration
