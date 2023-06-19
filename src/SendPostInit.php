@@ -44,7 +44,6 @@ class SendPostInit {
 
     public static function uninstall() {
         // Uninstall plugin
-        error_log( print_r( 'Uninstall plugin', true ) );
     }
 
     /**
