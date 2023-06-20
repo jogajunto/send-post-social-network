@@ -6,6 +6,7 @@
  * Author: Rafael de Araujo Procopio
  * Author URI: https://github.com/rafaell1995
  * Text Domain: send-post-social-network
+ * License: GPL-2.0-or-later
  */
 
 // Se esse arquivo é chamado diretamente, abortar.
