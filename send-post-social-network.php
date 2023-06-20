@@ -7,6 +7,7 @@
  * Author URI: https://github.com/rafaell1995
  * Text Domain: send-post-social-network
  * License: GPL-2.0-or-later
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.html
  */
 
 // Se esse arquivo é chamado diretamente, abortar.
