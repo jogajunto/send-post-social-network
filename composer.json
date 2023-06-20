@@ -1,5 +1,5 @@
 {
-    "name": "local/send-post-social-network",
+    "name": "jogajunto/send-post-social-network",
     "description": "Plugin for send posts to socials network with zapier",
     "version": "1.0.0",
     "type": "wordpress-plugin",
